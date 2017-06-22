@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="demo">
+	<head>
+		<meta charset="UTF-8">
+		<title>First program</title>
+	</head>
+	<body>
+		<h1>Trying to include financial information</h1>
+		<div ng-controller="prntCtrl">
+			<h3>Parent controller using ng-controller</h3>
+			<input type="text" ng-model="kit">
+		    <h1>{{kit}}</h1>
+		</div>
+		<div ng-controller="childCtrl">
+			<h3>Child controller using ng-controller</h3>
+			<input type="text" ng-model="kit">
+		    <h1>{{kit}}</h1>
+		</div>
+		<script src="js/angular.min.js"></script>
+		<script src="js/first.js"></script>
+	</body>
+</html>
